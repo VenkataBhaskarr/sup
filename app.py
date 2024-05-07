@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify
 import pandas as pd
 from minisom import MiniSom
 import numpy as np
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 
 # Define a function to preprocess the input case
